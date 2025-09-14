@@ -1,0 +1,66 @@
+:root {
+    --color-de-fondo: #2c3e50;
+    --color-principal: #3498db;
+    --color-secundario: #2980b9;
+    --color-texto: #ecf0f1;
+    --color-borde: #ecf0f1;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: Arial, sans-serif;
+    color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--color-principal);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1, h3 {
+    color: var(--color-texto);
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input {
+    width: 60%;
+}
+
+.button-adicionar, .button-sortear, .button-reiniciar {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.button-sortear, .button-reiniciar {
+    width: auto;
+}
+
+.button-adicionar:hover, .button-sortear:hover, .button-reiniciar:hover {
+    background-color: #1a5276;
+}
+
+.amigos-lista, .resultado-container {
+    margin-top: 20px;
+    border: 1px solid var(--color-borde);
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+}
